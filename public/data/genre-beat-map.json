@@ -1,0 +1,41 @@
+{
+  "version": "1",
+  "genres": {
+    "love": {
+      "beat_sheet_id": "beats-love-v1",
+      "beat_ids": [
+        "love.hook",
+        "love.stake",
+        "love.adhesion",
+        "love.midpoint",
+        "love.black_moment",
+        "love.choice",
+        "love.hea_hfn"
+      ]
+    },
+    "murder": {
+      "beat_sheet_id": "beats-murder-v1",
+      "beat_ids": [
+        "murder.hook",
+        "murder.stake",
+        "murder.investigation",
+        "murder.midpoint",
+        "murder.crisis",
+        "murder.reveal",
+        "murder.coda"
+      ]
+    },
+    "crime-of-passion": {
+      "beat_sheet_id": "beats-crime-of-passion-v1",
+      "beat_ids": [
+        "passion.hook",
+        "passion.bond",
+        "passion.escalate",
+        "passion.midpoint",
+        "passion.trap",
+        "passion.act",
+        "passion.aftermath"
+      ]
+    }
+  }
+}

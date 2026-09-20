@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09090b;
+  --foreground: #fafafa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(244, 63, 94, 0.35);
+}
+
+.prose-craft h1 {
+  @apply mt-0 mb-4 text-3xl font-semibold tracking-tight text-zinc-50;
+}
+.prose-craft h2 {
+  @apply mt-10 mb-3 scroll-mt-24 border-b border-zinc-800 pb-2 text-xl font-semibold tracking-tight text-zinc-100;
+}
+.prose-craft h3 {
+  @apply mt-6 mb-2 text-base font-semibold text-zinc-200;
+}
+.prose-craft p {
+  @apply my-3 text-base leading-relaxed text-zinc-400;
+}
+.prose-craft ul {
+  @apply my-3 list-disc space-y-1.5 pl-5 text-zinc-400;
+}
+.prose-craft ol {
+  @apply my-3 list-decimal space-y-1.5 pl-5 text-zinc-400;
+}
+.prose-craft li {
+  @apply leading-relaxed;
+}
+.prose-craft strong {
+  @apply font-semibold text-zinc-200;
+}
+.prose-craft a {
+  @apply text-rose-300 underline-offset-2 hover:underline;
+}
+.prose-craft code {
+  @apply rounded bg-zinc-800 px-1.5 py-0.5 font-mono text-[0.85em] text-zinc-200;
+}
+.prose-craft pre {
+  @apply my-4 overflow-x-auto rounded-xl border border-zinc-800 bg-zinc-900/80 p-4 text-sm text-zinc-300;
+}
+.prose-craft pre code {
+  @apply bg-transparent p-0;
+}
+.prose-craft blockquote {
+  @apply my-4 border-l-2 border-rose-500/40 pl-4 text-zinc-400 italic;
+}
+.prose-craft hr {
+  @apply my-8 border-zinc-800;
+}
+.prose-craft table {
+  @apply my-4 w-full border-collapse text-left text-sm;
+}
+.prose-craft th {
+  @apply border-b border-zinc-700 px-3 py-2 font-medium text-zinc-200;
+}
+.prose-craft td {
+  @apply border-b border-zinc-800/80 px-3 py-2 text-zinc-400 align-top;
+}
+.prose-craft input[type="checkbox"] {
+  @apply mr-2 accent-rose-400;
+}

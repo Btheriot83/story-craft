@@ -1,0 +1,65 @@
+{
+  "version": "1",
+  "genres": [
+    {
+      "id": "genre-love",
+      "display_name": "Love",
+      "slug": "love",
+      "short_definition": "Two people move toward intimacy; ends in earned HEA or HFN.",
+      "sibling_notes": "Not tragedy-by-default. Passion-crime may involve lovers but centers irreversible harm + aftermath, not romance contract.",
+      "beat_sheet_id": "beats-love-v1",
+      "checklist": "frameworks/checklists/love.md",
+      "research": "research/love.md",
+      "example": "frameworks/examples/love-cold-open.md",
+      "spoken_minutes_target": {
+        "min": 2,
+        "max": 5
+      },
+      "word_count_guide": {
+        "min": 400,
+        "max": 750
+      },
+      "ending_contract": "HEA or HFN required; fade/ambiguous commitment fails"
+    },
+    {
+      "id": "genre-murder",
+      "display_name": "Murder",
+      "slug": "murder",
+      "short_definition": "A death (or imminent murder) structured as fair-play puzzle and/or suspense; reveal recontextualizes planted clues.",
+      "sibling_notes": "Differs from crime-of-passion: engine is concealment + clue craft, not emotional eruption. Passion motive OK if fair clues drive the ending.",
+      "beat_sheet_id": "beats-murder-v1",
+      "checklist": "frameworks/checklists/murder.md",
+      "research": "research/murder.md",
+      "example": "frameworks/examples/murder-cold-open.md",
+      "spoken_minutes_target": {
+        "min": 2,
+        "max": 5
+      },
+      "word_count_guide": {
+        "min": 400,
+        "max": 750
+      },
+      "ending_contract": "Fair reveal + consequence; unsolved shrug fails"
+    },
+    {
+      "id": "genre-crime-of-passion",
+      "display_name": "Crime of Passion",
+      "slug": "crime-of-passion",
+      "short_definition": "Emotion-driven irreversible act rooted in intimacy/jealousy/betrayal, plus moral and emotional aftermath.",
+      "sibling_notes": "Not a whodunit lane. Heat and cost matter more than clue parade. May overlap murder factually but craft focus is passion \u2192 rupture \u2192 consequence.",
+      "beat_sheet_id": "beats-crime-of-passion-v1",
+      "checklist": "frameworks/checklists/crime-of-passion.md",
+      "research": "research/crime-of-passion.md",
+      "example": "frameworks/examples/passion-cold-open.md",
+      "spoken_minutes_target": {
+        "min": 2,
+        "max": 5
+      },
+      "word_count_guide": {
+        "min": 400,
+        "max": 750
+      },
+      "ending_contract": "On-page irreversible act + aftermath cost; fade-before-choice fails"
+    }
+  ]
+}
