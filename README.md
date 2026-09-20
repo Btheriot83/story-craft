@@ -1,78 +1,21 @@
 # Story Craft
+An editorial training desk for agents researching and writing relationship-led factual crime narration. Learn → plan → write → grade. Target 570–610 spoken words, actual read strictly over 3:00, preferred through 4:30, hard ceiling 5:00.
 
-Public **human-browsable** and **machine-readable** craft catalog for ≤5-minute (≤~750 words) adult fiction scripts in three genres:
+## Development
+Next.js App Router, TypeScript, Tailwind. Use `npm install`, `npm run dev`; validation commands are `npx tsc --noEmit`, `npm run lint`, `npm run build`. Serve built output with `npm run start`.
 
-| Genre | Promise |
-|-------|---------|
-| **Love** | Intimacy vs wound → earned HEA or HFN |
-| **Murder** | Fair clue craft → reveal that reclassifies plants |
-| **Crime of Passion** | Obsession → irreversible act → aftermath cost |
+## Content and routes
+- /cross-cutting: research and writing curriculum.
+- /genres/{love,murder,crime-of-passion}: overlapping factual-story lenses; legacy slugs retained.
+- /beats/{slug}: adaptable plans.
+- /examples/love: full fictional worked example; murder and passion are revision exercises.
+- /train: local grading desk; timing estimates never verify an actual read.
+- /checklists/universal: hard gates and rubric.
+- /sources: primary craft/ethics references.
+- /agents: corpus access and agent workflow.
 
-**Strong endings are non-negotiable.** Fade-outs and soft landings = FAIL (`ending_strength` must be 3).
+## Source parity
+Research lives in research/, checklists/examples in frameworks/, JSON in data/ and frameworks/beat-sheets/. Static fetchable copies live under public/corpus/ and public/data/. Root llms.txt and schema.md have public copies. When changing content, update both copies; framework paths must be fetchable. Version 2 retires the old fiction genre contracts and timing targets. Schema details are in schema.md.
 
-Owner: Brandon Theriot / Btheriot83
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-```bash
-npm run build   # production build
-npm run start   # serve production
-npm run lint
-```
-
-Stack: Next.js 16 · App Router · TypeScript · Tailwind 4 · free Vercel-ready (no paid deps).
-
-## Routes
-
-| Path | What |
-|------|------|
-| `/` | Landing — genres, pitch, ending gate |
-| `/genres/[slug]` | Research (`love` · `murder` · `crime-of-passion`) |
-| `/beats/[slug]` | Beat sheet timeline + act badges |
-| `/checklists/[slug]` | Universal + genre QA checklists |
-| `/examples/[slug]` | Cold-open fragments (`love` · `murder` · `passion`) |
-| `/train` | Success criteria + FAIL rules + contracts |
-| `/agents` | How to load machine surfaces |
-| `/sources` | Bibliography |
-| `/cross-cutting` | Shared craft notes |
-
-## Machine surfaces (static)
-
-Prefer these over scraping HTML:
-
-| URL | Source |
-|-----|--------|
-| `/llms.txt` | Agent briefing (site-path version) |
-| `/schema.md` | Field contracts + evaluation object |
-| `/data/genres.json` | Genre metadata |
-| `/data/beats.jsonl` | Flat beat index |
-| `/data/frameworks.json` | Framework index |
-| `/data/genre-beat-map.json` | Genre → ordered beat ids |
-| `/data/beat-sheets/{slug}.json` | Full beat sheets |
-
-Corpus also lives at repo root: `research/`, `frameworks/`, `data/`, `llms.txt`, `schema.md`.
-
-## Deploy (Vercel free)
-
-1. Push to GitHub: `https://github.com/Btheriot83/story-craft`
-2. Import the repo in [Vercel](https://vercel.com) (Hobby / free)
-3. Framework preset: Next.js — defaults fine
-4. Deploy
-
-## Non-negotiables
-
-- Adult fiction craft only. No CSAM.
-- Summarize + cite — no substantial copyrighted prose.
-- Original micro-examples only (fragments, not full scripts sold as complete).
-- Beginning / Middle / Ending are first-class; weak endings fail QA.
-
-## License / disclaimer
-
-Educational craft catalog. Not legal advice. See site footer disclaimer.
+## Scope
+Research and narration only. No invented factual scenes, alleged guilt stated as fact, compulsory romance endings or forced solutions. All current examples are explicitly fictional. Craft references do not substitute for case evidence. Production scene counts do not drive prose. No publication or media-generation workflow is included.

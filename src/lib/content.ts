@@ -78,9 +78,9 @@ export function getExampleMarkdown(slug: ExampleSlug): string {
 }
 
 export function exampleGenreLabel(slug: ExampleSlug): string {
-  if (slug === "passion") return "Crime of Passion";
-  if (slug === "love") return "Love";
-  return "Murder";
+  if (slug === "passion") return "Verdict exercise";
+  if (slug === "love") return "Full worked story";
+  return "Evidence exercise";
 }
 
 export function exampleToGenreSlug(slug: ExampleSlug): GenreSlug {

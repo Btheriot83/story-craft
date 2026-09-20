@@ -1,0 +1,70 @@
+{
+  "version": "2",
+  "purpose": "Relationship-led factual narrated stories of five minutes or less",
+  "narration": {
+    "word_count_guide": {
+      "min": 570,
+      "max": 610
+    },
+    "minimum_seconds_exclusive": 180,
+    "preferred_maximum_seconds": 270,
+    "hard_maximum_seconds": 300,
+    "timing_requires": "actual timed read",
+    "scene_count_is_not_prose_quota": true
+  },
+  "workflow": [
+    "learn",
+    "plan",
+    "write",
+    "grade"
+  ],
+  "required_claim_fields": [
+    "id",
+    "claim",
+    "source",
+    "locator",
+    "speaker",
+    "date",
+    "status",
+    "contradictions",
+    "permitted_wording"
+  ],
+  "claim_statuses": [
+    "documented_fact",
+    "allegation",
+    "testimony",
+    "finding",
+    "later_interpretation",
+    "disputed",
+    "unknown"
+  ],
+  "hard_gates": [
+    "source_support",
+    "no_invention",
+    "precise_attribution",
+    "material_context",
+    "current_status",
+    "clear_chronology",
+    "timed_read",
+    "specific_supported_ending",
+    "fiction_labeled",
+    "copyright_restraint"
+  ],
+  "rubric": {
+    "human_spine": 2,
+    "causality": 2,
+    "clarity": 2,
+    "ending_strength": 3,
+    "restraint": 2
+  },
+  "scale": {
+    "min": 0,
+    "max": 3
+  },
+  "decisions": [
+    "pass",
+    "revise",
+    "blocked",
+    "unverified"
+  ]
+}

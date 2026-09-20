@@ -1,292 +1,113 @@
 {
-  "id": "beats-crime-of-passion-v1",
+  "id": "beats-crime-of-passion-v2",
   "genre": "crime-of-passion",
-  "version": "1",
+  "version": "2",
   "spoken_minutes_target": {
-    "min": 2,
-    "max": 5
+    "min": 3,
+    "max": 4.5
   },
   "word_count_guide": {
-    "min": 400,
-    "max": 750,
-    "ideal": 650
+    "min": 570,
+    "max": 610,
+    "ideal": 590
   },
-  "ending_strength_required": "high",
+  "ending_strength_required": "3",
   "ending_fail_modes": [
-    "fade_before_choice",
-    "act_off_page",
-    "glorified_no_cost",
-    "puzzle_flip_without_heat",
-    "smirk_getaway"
+    "invented_resolution",
+    "abstract_moral",
+    "unsupported_accusation",
+    "outdated_case_status"
   ],
   "beats": [
     {
-      "id": "passion.hook",
+      "id": "crime-of-passion-1",
       "order": 1,
-      "name": "Wound cold open",
+      "name": "The human question",
       "act_phase": "beginning",
-      "purpose": "Drop into jealousy/betrayal/humiliation evidence; plant token that ending will ruin or weaponize.",
-      "duration_hint_sec": [
-        0,
-        25
-      ],
+      "purpose": "Open on a supported action or contradiction involving a named person. Establish a question the record can sustain.",
       "must": [
-        "emotional wound visible",
-        "relationship context implied",
-        "token plant"
+        "Whose claim is this, and what did the court actually decide?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "marriage Wikipedia",
-        "cool detective distance as default POV"
-      ],
-      "reveal_role": "plant",
-      "citations": [
-        {
-          "title": "Handley cold open",
-          "url": "https://annhandley.com/cold-open-2/",
-          "note": "Specific moment"
-        },
-        {
-          "title": "CrimeReads revenge",
-          "url": "https://crimereads.com/revenge-in-fiction-author-discussion/",
-          "note": "Grief obsession rage"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "passion.bond",
+      "id": "crime-of-passion-2",
       "order": 2,
-      "name": "Bond & identity threat",
+      "name": "The relationship before the rupture",
       "act_phase": "beginning",
-      "purpose": "Show what was loved and what pride/self cannot bear losing; make passion intelligible.",
-      "duration_hint_sec": [
-        20,
-        55
-      ],
+      "purpose": "Orient the listener in time and explain the relationship through documented choices.",
       "must": [
-        "felt attachment",
-        "identity threat named in behavior",
-        "pressure cooker hint"
+        "Whose claim is this, and what did the court actually decide?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "unmotivated rage",
-        "glamor setup without human texture"
-      ],
-      "reveal_role": "plant",
-      "citations": [
-        {
-          "title": "CrimeReads character-driven revenge",
-          "url": "https://crimereads.com/revenge-in-fiction-author-discussion/",
-          "note": "Visceral thirst via character"
-        },
-        {
-          "title": "McKee want/need",
-          "url": "https://literarysofa.com/2014/02/06/a-novel-view-of-robert-mckees-story-substance-structure-style-and-the-principles-of-screenwriting/",
-          "note": "Desire engine"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "passion.escalate",
+      "id": "crime-of-passion-3",
       "order": 3,
-      "name": "Obsession escalates / exits close",
+      "name": "The consequential change",
       "act_phase": "middle",
-      "purpose": "Remove dignified exits; evidence or jealousy narrows options; heat rises.",
-      "duration_hint_sec": [
-        55,
-        130
-      ],
+      "purpose": "Show what changed and why the next selected moment follows. Do not infer motive from sequence alone.",
       "must": [
-        "options narrow",
-        "POV claustrophobia",
-        "relationship texture continues"
+        "Whose claim is this, and what did the court actually decide?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "procedural detours",
-        "new subplot",
-        "wide geographic hop"
-      ],
-      "reveal_role": "plant",
-      "citations": [
-        {
-          "title": "Thriller narrowing choices",
-          "url": "https://writeaibook.com/tools/thriller-outline-template",
-          "note": "Remove safe options"
-        },
-        {
-          "title": "Hitchcock bomb",
-          "url": "https://www.davidbordwell.net/blog/2013/11/29/hitchcock-lessing-and-the-bomb-under-the-table/",
-          "note": "Audience anticipation"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "passion.midpoint",
+      "id": "crime-of-passion-4",
       "order": 4,
-      "name": "Confirmation or refused mercy",
+      "name": "The evidence and its limits",
       "act_phase": "middle",
-      "purpose": "Betrayal confirmed (or chance at mercy refused); path to irreversible act becomes likely.",
-      "duration_hint_sec": [
-        130,
-        180
-      ],
+      "purpose": "Introduce the material discovery or claim, attribute it, and include the competing account that changes understanding.",
       "must": [
-        "confirmation or mercy window",
-        "protagonist chooses heat over exit",
-        "listener feels inevitability building"
+        "Whose claim is this, and what did the court actually decide?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "midpoint cool banter reset",
-        "random violence without confirm"
-      ],
-      "reveal_role": "plant",
-      "citations": [
-        {
-          "title": "Yorke midpoint",
-          "url": "https://www.johnyorkestory.com/five-act-structure/",
-          "note": "Revelation/irreversible"
-        },
-        {
-          "title": "Shortzly open loop",
-          "url": "https://shortzly.com/blog/short-form-video-storytelling-structures",
-          "note": "Hold tension to late payoff"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "passion.trap",
+      "id": "crime-of-passion-5",
       "order": 5,
-      "name": "Trap / point-of-no-return approach",
-      "act_phase": "middle",
-      "purpose": "Location/time traps parties together; body language precedes decision; last exit flashes.",
-      "duration_hint_sec": [
-        180,
-        230
-      ],
+      "name": "The supported turn",
+      "act_phase": "ending",
+      "purpose": "Explain the verdict, reversal, revelation or last verified development in plain language.",
       "must": [
-        "shared confined arena",
-        "last exit visible then closed",
-        "act imminent"
+        "Whose claim is this, and what did the court actually decide?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "fade before choice",
-        "cavalry interrupt without cost"
-      ],
-      "reveal_role": "none",
-      "citations": [
-        {
-          "title": "Writers in the Storm crisis",
-          "url": "https://writersinthestormblog.com/2023/10/reward-your-readers-with-a-battle-that-earns-the-ending/",
-          "note": "Crisis before climax"
-        },
-        {
-          "title": "Stevens aftermath model",
-          "url": "http://www.bkstevensmysteries.com/book/the-last-blue-glass/",
-          "note": "Dinner party revenge pressure"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "passion.act",
+      "id": "crime-of-passion-6",
       "order": 6,
-      "name": "Irreversible act (on-page)",
+      "name": "The human consequence",
       "act_phase": "ending",
-      "purpose": "The passion crime or moral rupture happens in scene — not reported later.",
-      "duration_hint_sec": [
-        230,
-        270
-      ],
+      "purpose": "Return to a named principal with a verified consequence or precisely bounded unanswered question.",
       "must": [
-        "on-page irreversible moment",
-        "clear causality from wound",
-        "sensory specificity without gore-porn"
+        "Whose claim is this, and what did the court actually decide?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "off-page act",
-        "cartoon violence",
-        "act without prior pressure"
-      ],
-      "reveal_role": "payoff",
-      "citations": [
-        {
-          "title": "CrimeReads cost of revenge",
-          "url": "https://crimereads.com/revenge-in-fiction-author-discussion/",
-          "note": "Consequences required"
-        },
-        {
-          "title": "Poe single effect",
-          "url": "https://www.eapoe.org/works/criticsm/gm442hn1.htm",
-          "note": "Design toward final effect"
-        }
-      ],
-      "ending_strength": "required_high"
-    },
-    {
-      "id": "passion.aftermath",
-      "order": 7,
-      "name": "Aftermath cost + token echo",
-      "act_phase": "ending",
-      "purpose": "Pyrrhic/tragic/moral weight; loss still lost; opening token returns transformed; hard resonant stop.",
-      "duration_hint_sec": [
-        270,
-        300
-      ],
-      "must": [
-        "emotional or moral cost on-page",
-        "echo opening token",
-        "no glorified shrug",
-        "decisive last image"
-      ],
-      "avoid": [
-        "smirk getaway",
-        "fade before meaning",
-        "PSA lecture",
-        "unsolved shrug"
-      ],
-      "reveal_role": "payoff",
-      "ending_strength": "required_high",
-      "citations": [
-        {
-          "title": "CrimeReads aftermath",
-          "url": "https://crimereads.com/revenge-in-fiction-author-discussion/",
-          "note": "Loss remains after revenge"
-        },
-        {
-          "title": "Kidder endings",
-          "url": "https://hannahleekidder.com/2023/07/05/how-to-end-a-short-story-strategies-examples/",
-          "note": "Echo beginning"
-        },
-        {
-          "title": "Writers.com change/meaning",
-          "url": "https://writers.com/feature/better-endings-surprising-yet-inevitable-and-astonishing",
-          "note": "Meaning from change"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     }
-  ],
-  "timeline_patterns": [
-    "continuous_eruption_night",
-    "aftermath_then_flashback",
-    "in_medias_res_aftermath_then_reconstruct"
-  ],
-  "character_depth_rules": [
-    "Dyad or triangle only",
-    "Bond must be felt on-page before rupture",
-    "One identity threat drives the passion",
-    "Sympathy without endorsement; consequence is craft"
-  ],
-  "opening_hook_patterns": [
-    "evidence_of_betrayal",
-    "public_humiliation",
-    "reunion_that_reopens_wound",
-    "weaponized_hospitality_ticking"
-  ],
-  "ending_patterns": [
-    "pyrrhic_completion",
-    "tragic_error_wrong_target",
-    "mercy_refused_too_late",
-    "grotesque_ordinary_after",
-    "confession_to_the_dead",
-    "justice_as_humiliation_or_relief"
   ]
 }

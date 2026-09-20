@@ -1,103 +1,84 @@
 {
-  "version": "1",
-  "ending_strength_required_global": "high",
-  "weak_ending_policy": "fail",
+  "version": "2",
+  "training_policy": "/data/training.json",
   "frameworks": [
     {
-      "id": "beats-love-v1",
+      "id": "beats-love-v2",
       "type": "beat_sheet",
       "genre": "love",
-      "path": "frameworks/beat-sheets/love.json",
-      "act_phases_required": [
-        "beginning",
-        "middle",
-        "ending"
-      ],
-      "ending_strength_required": "high"
+      "path": "/data/beat-sheets/love.json"
     },
     {
-      "id": "beats-murder-v1",
+      "id": "beats-murder-v2",
       "type": "beat_sheet",
       "genre": "murder",
-      "path": "frameworks/beat-sheets/murder.json",
-      "act_phases_required": [
-        "beginning",
-        "middle",
-        "ending"
-      ],
-      "ending_strength_required": "high"
+      "path": "/data/beat-sheets/murder.json"
     },
     {
-      "id": "beats-crime-of-passion-v1",
+      "id": "beats-crime-of-passion-v2",
       "type": "beat_sheet",
       "genre": "crime-of-passion",
-      "path": "frameworks/beat-sheets/crime-of-passion.json",
-      "act_phases_required": [
-        "beginning",
-        "middle",
-        "ending"
-      ],
-      "ending_strength_required": "high"
+      "path": "/data/beat-sheets/crime-of-passion.json"
     },
     {
-      "id": "checklist-universal-v1",
-      "type": "checklist",
-      "path": "frameworks/checklists/universal.md",
-      "strong_ending_gate": true
-    },
-    {
-      "id": "checklist-love-v1",
-      "type": "checklist",
-      "genre": "love",
-      "path": "frameworks/checklists/love.md",
-      "strong_ending_gate": true
-    },
-    {
-      "id": "checklist-murder-v1",
-      "type": "checklist",
-      "genre": "murder",
-      "path": "frameworks/checklists/murder.md",
-      "strong_ending_gate": true
-    },
-    {
-      "id": "checklist-crime-of-passion-v1",
-      "type": "checklist",
-      "genre": "crime-of-passion",
-      "path": "frameworks/checklists/crime-of-passion.md",
-      "strong_ending_gate": true
-    },
-    {
-      "id": "example-love-cold-open-v1",
-      "type": "example",
-      "genre": "love",
-      "path": "frameworks/examples/love-cold-open.md"
-    },
-    {
-      "id": "example-murder-cold-open-v1",
-      "type": "example",
-      "genre": "murder",
-      "path": "frameworks/examples/murder-cold-open.md"
-    },
-    {
-      "id": "example-passion-cold-open-v1",
-      "type": "example",
-      "genre": "crime-of-passion",
-      "path": "frameworks/examples/passion-cold-open.md"
-    },
-    {
-      "id": "research-cross-cutting-v1",
+      "id": "research-cross-cutting",
       "type": "research",
-      "path": "research/cross-cutting.md"
+      "path": "/corpus/research/cross-cutting.md"
     },
     {
-      "id": "research-sources-v1",
-      "type": "bibliography",
-      "path": "research/sources.md"
+      "id": "research-love",
+      "type": "research",
+      "path": "/corpus/research/love.md"
+    },
+    {
+      "id": "research-murder",
+      "type": "research",
+      "path": "/corpus/research/murder.md"
+    },
+    {
+      "id": "research-crime-of-passion",
+      "type": "research",
+      "path": "/corpus/research/crime-of-passion.md"
+    },
+    {
+      "id": "research-sources",
+      "type": "research",
+      "path": "/corpus/research/sources.md"
+    },
+    {
+      "id": "frameworks-checklists-universal",
+      "type": "checklist",
+      "path": "/corpus/frameworks/checklists/universal.md"
+    },
+    {
+      "id": "frameworks-checklists-love",
+      "type": "checklist",
+      "path": "/corpus/frameworks/checklists/love.md"
+    },
+    {
+      "id": "frameworks-checklists-murder",
+      "type": "checklist",
+      "path": "/corpus/frameworks/checklists/murder.md"
+    },
+    {
+      "id": "frameworks-checklists-crime-of-passion",
+      "type": "checklist",
+      "path": "/corpus/frameworks/checklists/crime-of-passion.md"
+    },
+    {
+      "id": "frameworks-examples-love-cold-open",
+      "type": "example",
+      "path": "/corpus/frameworks/examples/love-cold-open.md"
+    },
+    {
+      "id": "frameworks-examples-murder-cold-open",
+      "type": "example",
+      "path": "/corpus/frameworks/examples/murder-cold-open.md"
+    },
+    {
+      "id": "frameworks-examples-passion-cold-open",
+      "type": "example",
+      "path": "/corpus/frameworks/examples/passion-cold-open.md"
     }
-  ],
-  "act_phases_required_global": [
-    "beginning",
-    "middle",
-    "ending"
   ]
 }

@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Story Craft — short-fiction craft catalog */
+  /* Story Craft — factual narration training desk */
 };
 
 export default nextConfig;

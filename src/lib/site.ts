@@ -1,11 +1,11 @@
 export const SITE = {
   name: "Story Craft",
   description:
-    "Craft catalog for ≤5-minute adult fiction scripts in love, murder, and crime-of-passion. Strong endings required.",
+    "A training desk for researched, relationship-led crime narration. Learn, plan, write and grade stories of five minutes or less.",
   url: "https://github.com/Btheriot83/story-craft",
   owner: "Brandon Theriot / Btheriot83",
   disclaimer:
-    "Adult fiction craft catalog only. Summarize and cite sources — do not paste substantial copyrighted prose. Examples are original fragments, not full scripts. Not legal advice. No CSAM.",
+    "Research and writing education. Examples are explicitly fictional exercises, not factual case evidence. Verify every material claim and preserve uncertainty. Craft readiness is not publication approval.",
 };
 
 export const GENRE_SLUGS = ["love", "murder", "crime-of-passion"] as const;
@@ -27,25 +27,25 @@ export const GENRE_META: Record<
   { label: string; accent: string; accentBg: string; accentBorder: string; short: string }
 > = {
   love: {
-    label: "Love",
+    label: "Relationship & betrayal",
     accent: "text-rose-300",
     accentBg: "bg-rose-500/10",
     accentBorder: "border-rose-500/30",
-    short: "Intimacy vs wound → earned HEA or HFN",
+    short: "A documented bond → a consequential choice",
   },
   murder: {
-    label: "Murder",
+    label: "Death & investigation",
     accent: "text-sky-300",
     accentBg: "bg-sky-500/10",
     accentBorder: "border-sky-500/30",
-    short: "Fair clue craft → reveal that reclassifies plants",
+    short: "A discovery → what it establishes and what it cannot",
   },
   "crime-of-passion": {
-    label: "Crime of Passion",
+    label: "Trial & disputed truth",
     accent: "text-amber-300",
     accentBg: "bg-amber-500/10",
     accentBorder: "border-amber-500/30",
-    short: "Obsession → irreversible act → aftermath cost",
+    short: "Competing accounts → a precise human consequence",
   },
 };
 
