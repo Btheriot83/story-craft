@@ -5,8 +5,8 @@ export function Disclaimer({ compact = false }: { compact?: boolean }) {
   if (compact) {
     return (
       <p className="text-xs leading-relaxed text-zinc-500">
-        Adult fiction craft · summarize + cite only · original examples · not
-        legal advice. Owner: {SITE.owner}.{" "}
+        Factual story training · verify and attribute · fictional exercises ·
+        evidence before elegance. Owner: {SITE.owner}.{" "}
         <Link href="/sources" className="underline underline-offset-2 hover:text-zinc-300">
           Sources
         </Link>

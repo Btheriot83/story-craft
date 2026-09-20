@@ -30,7 +30,7 @@ export function Footer() {
           </a>
         </div>
         <p className="text-[11px] text-zinc-600">
-          {SITE.owner} · Adult fiction craft catalog · Weak endings = FAIL
+          {SITE.owner} · Factual story training · Evidence before elegance
         </p>
       </div>
     </footer>

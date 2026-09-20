@@ -1,121 +1,14 @@
-# Story Craft — llms.txt (Agent How-To)
+# Story Craft · factual narration training v2
+Train research and writing for relationship-led factual crime narratives. Read in order:
+1. /data/training.json — authoritative editorial targets and gates.
+2. /schema.md — claim ledger, plan and evaluation contracts.
+3. /corpus/research/cross-cutting.md — learn, plan, write, grade.
+4. /data/genres.json — overlapping story lenses, not mandatory genre lanes.
+5. /data/beat-sheets/{slug}.json — adaptable planning moments.
+6. /corpus/frameworks/examples/love-cold-open.md — full FICTIONAL worked example.
+7. /corpus/frameworks/checklists/universal.md — evidence and craft evaluation.
+8. /corpus/research/sources.md — craft references, not individual-case evidence.
 
-> Extremely short adult fiction (≤5:00 spoken / ~600–750 words) in three genres: **love**, **murder**, **crime-of-passion**.
-> Prefer machine surfaces under this site root (`/llms.txt`, `/schema.md`, `/data/*`). Human pages: `/`, `/genres/*`, `/beats/*`, `/train`, `/agents`.
+Target 570–610 narration words. Actual read must be >180 and <=300 seconds; preferred <=270. Word-count timing is provisional. Never invent dialogue, motive, guilt, evidence, injuries or relationships. Attribute allegation, testimony, verdict, appeal and interpretation. Explicitly cue flashbacks. End with a named principal and supported consequence, revelation or bounded uncertainty. Unresolved cases can pass. Never force romance or a solved mystery. Fifty scenes is downstream production, not a prose requirement.
 
-## Read order
-
-1. This file (`/llms.txt`)
-2. `/schema.md` — contracts & fail criteria
-3. `/data/genres.json` — pick genre id
-4. Matching research pages `/genres/{slug}` (+ `/cross-cutting`)
-5. `/data/beat-sheets/{slug}.json` (also indexed in `/data/genre-beat-map.json`)
-6. Checklists via `/checklists/{slug}` (universal + genre)
-7. Optional: `/examples/{slug}` for cold-open technique (not full-story templates)
-8. `/sources` when justifying craft choices
-
-## Machine surfaces
-
-| Path | Use |
-|------|-----|
-| `/llms.txt` | This briefing |
-| `/schema.md` | Field contracts + evaluation object |
-| `/data/genres.json` | Genre metadata |
-| `/data/beats.jsonl` | Flat beat index |
-| `/data/frameworks.json` | Framework index |
-| `/data/genre-beat-map.json` | Genre → ordered beat ids |
-| `/data/beat-sheets/love.json` | Love beat sheet |
-| `/data/beat-sheets/murder.json` | Murder beat sheet |
-| `/data/beat-sheets/crime-of-passion.json` | Crime-of-passion beat sheet |
-
-## Mission
-
-Write or evaluate Story Craft scripts that:
-
-- Grab attention in the **beginning** (cold open → stake → care in ~30–60s)
-- Escalate in the **middle** (no sag; midpoint turn; character pressure; clear timeline)
-- **Punch in the ending** (earned payoff; resonance; genre promise kept)
-
-## Non-negotiable success criteria
-
-A script **FAILS** if any of these are true:
-
-| # | Failure |
-|---|---------|
-| 1 | Weak / fade-out / soft-landing ending (`ending_strength` < 3) |
-| 2 | Missing beginning, middle, or ending as first-class phases |
-| 3 | Over 5:00 spoken (~750–900+ words without justification) |
-| 4 | Love: no clear HEA or HFN; ambiguous “maybe” |
-| 5 | Murder: unsolved shrug OR reveal that invents decisive facts |
-| 6 | Crime of passion: irreversible act off-page OR no aftermath cost |
-| 7 | CSAM / prohibited content |
-| 8 | Substantial copyrighted prose pasted from sources |
-
-**Brilliant hooks do not compensate for weak endings.**
-
-## Writing algorithm
-
-```
-SELECT genre from /data/genres.json
-LOAD beat sheet; note act_phase on every beat
-NAME single_effect (Poe) in one sentence
-PLAN ending FIRST (crisis → climax → resonant coda + opening echo)
-DRAFT beginning cold open (plant token)
-DRAFT middle escalation (midpoint flip; narrow exits)
-DRAFT ending punch (must hurt to cut last 30–40 words)
-TRIM to ≤5:00; multi-function details; ≤4 names; no B-plot
-RUN universal checklist + genre checklist
-EMIT evaluation object from /schema.md
-IF ending_strength < 3 OR any hard fail → REVISE ending before delivery
-```
-
-## Act phase duties (all genres)
-
-### Beginning (~0:00–1:00)
-- Cold open into a specific moment (Handley) — not warm reportage
-- Stake + why we care within ~30–60 seconds
-- Genre promise signaled
-- Plant detail/token for ending echo
-
-### Middle (~1:00–3:30)
-- Causal escalation; attempts worsen situation
-- Midpoint changes meaning or stakes (Yorke)
-- Character pressure; timeline clarity
-- Micro status changes often enough to prevent sag
-- Murder: plant fair dual-reading clues; Passion: close exits; Love: adhesion + wound-based rupture
-
-### Ending (~3:30–5:00) — REQUIRED HIGH STRENGTH
-- Love: costly choice + unmistakable HEA/HFN + echo
-- Murder: fair reassembly reveal + consequence + echo
-- Passion: on-page irreversible act + aftermath cost + token echo
-- Surprising yet inevitable; cut after the punch (no lecture fade)
-
-## Genre engines (do not conflate)
-
-| Genre | Engine | Ending promise |
-|-------|--------|----------------|
-| love | Intimacy vs wound | HEA or HFN earned |
-| murder | Fair clue craft / suspense | Reveal reclassifies plants + cost |
-| crime-of-passion | Obsession → rupture | Act + moral/emotional aftermath |
-
-Crime-of-passion is **not** “murder with feelings.” Murder lane can include passion motives but still owes fair play if sold as puzzle.
-
-## Output expectations
-
-When producing a story, return:
-
-1. Title + genre id  
-2. Estimated word count + spoken seconds  
-3. Beat map (`beat_id` → one-line fulfillment) including **ending beats**  
-4. Full script text  
-5. Evaluation object (`pass`, `ending_strength`, flags)
-
-When evaluating only: evaluation object + concrete revise notes focused on weakest act phase (usually ending).
-
-## Citations policy
-
-Summarize craft ideas; cite titles/URLs from `/sources`. Never paste long copyrighted excerpts into scripts or notes.
-
-## Human pages
-
-`/` · `/genres/{love|murder|crime-of-passion}` · `/beats/{slug}` · `/checklists/{slug}` · `/examples/{love|murder|passion}` · `/train` · `/agents` · `/sources` · `/cross-cutting`
+Return evidence packet, chronological timeline, story plan, narration, claim mapping, timed-read status and evaluation with precise revision priorities. Missing central evidence blocks factual sign-off. A polished script is not permission to publish. All examples in this corpus are fictional training exercises.

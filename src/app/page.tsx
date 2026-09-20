@@ -1,140 +1,139 @@
 import Link from "next/link";
-import { Disclaimer } from "@/components/Disclaimer";
 import { getGenres } from "@/lib/content";
-import { GENRE_META, type GenreSlug } from "@/lib/site";
-
+const steps = [
+  ["01", "Learn", "Build the evidence before the sentence.", "/cross-cutting"],
+  ["02", "Plan", "Find the relationship that changes everything.", "/#lenses"],
+  [
+    "03",
+    "Write",
+    "Turn verified moments into spoken narrative.",
+    "/examples/love",
+  ],
+  ["04", "Grade", "Make every claim—and the ending—hold.", "/train"],
+];
 export default function HomePage() {
-  const genres = getGenres();
-
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-      <p className="text-xs font-medium uppercase tracking-[0.2em] text-rose-400/80">
-        Craft catalog · Adult fiction
-      </p>
-      <h1 className="mt-3 text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl">
-        Story Craft
-      </h1>
-      <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
-        Public human-browsable and machine-readable craft catalog for{" "}
-        <strong className="font-medium text-zinc-200">≤5-minute</strong> (≤~750
-        words) scripts in{" "}
-        <strong className="font-medium text-zinc-200">
-          love / murder / crime-of-passion
-        </strong>
-        . Beginning, middle, and ending are first-class. Weak endings fail.
-      </p>
-
-      <div className="mt-8 rounded-2xl border border-rose-500/35 bg-rose-500/10 p-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-rose-300">
-          Strong ending gate
-        </p>
-        <p className="mt-2 text-sm leading-relaxed text-zinc-300">
-          Fade-outs, soft landings, and unearned declarations are a hard{" "}
-          <span className="font-semibold text-rose-200">FAIL</span> — even when
-          the cold open is brilliant. Score{" "}
-          <code className="rounded bg-zinc-900 px-1.5 py-0.5 font-mono text-xs text-zinc-200">
-            ending_strength
-          </code>{" "}
-          0–3; production requires <strong className="text-zinc-100">3</strong>.
-          Plan crisis → climax → resonant coda before drafting prose.
-        </p>
-        <Link
-          href="/train"
-          className="mt-3 inline-block text-sm font-medium text-rose-300 hover:text-rose-200"
-        >
-          Train the agent →
-        </Link>
-      </div>
-
-      <section id="genres" className="mt-14 scroll-mt-24">
-        <h2 className="text-lg font-semibold text-zinc-100">Three genres</h2>
-        <p className="mt-1 text-sm text-zinc-500">
-          Pick a lane. Do not conflate engines.
-        </p>
-        <div className="mt-5 grid gap-3 sm:grid-cols-3">
-          {genres.map((g) => {
-            const meta = GENRE_META[g.slug as GenreSlug];
-            return (
-              <Link
-                key={g.id}
-                href={`/genres/${g.slug}`}
-                className={`rounded-2xl border p-4 transition hover:bg-zinc-900/40 ${meta.accentBorder} ${meta.accentBg}`}
-              >
-                <p className={`text-xs font-medium uppercase tracking-wide ${meta.accent}`}>
-                  Genre
-                </p>
-                <h3 className="mt-1 text-lg font-semibold text-zinc-50">
-                  {g.display_name}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                  {g.short_definition}
-                </p>
-              </Link>
-            );
-          })}
+    <div className="desk-home">
+      <section className="hero">
+        <div>
+          <p className="eyebrow">Love. Betrayal. Evidence. Consequence.</p>
+          <h1>
+            Make the truth
+            <br />
+            hold its <em>audience.</em>
+          </h1>
+          <p className="hero-copy">
+            A training desk for exceptional short crime stories. Build a
+            miniature murder movie through human choices, clear narration and
+            facts that can withstand scrutiny.
+          </p>
+          <div className="hero-actions">
+            <Link className="primary-link" href="/cross-cutting">
+              Start the curriculum <span>↗</span>
+            </Link>
+            <Link className="quiet-link" href="/examples/love">
+              Read a complete example →
+            </Link>
+          </div>
+          <p className="hero-note">
+            For writers & agents · Relationship-led factual crime · Five minutes
+            or less
+          </p>
         </div>
+        <aside className="case-card">
+          <p className="eyebrow">The central question</p>
+          <div className="case-line" />
+          <p className="case-question">
+            What did they choose.
+            <br />
+            What can we prove.
+            <br />
+            <em>Who lived with it.</em>
+          </p>
+          <div className="case-bottom">
+            <span>A working principle</span>
+            <p>
+              Suspense comes from the record.
+              <br />
+              Never from an invented fact.
+            </p>
+          </div>
+        </aside>
       </section>
-
-      <section id="beats" className="mt-14 scroll-mt-24">
-        <h2 className="text-lg font-semibold text-zinc-100">Beat sheets</h2>
-        <p className="mt-1 text-sm text-zinc-500">
-          Ordered timelines with act-phase badges.
-        </p>
-        <div className="mt-5 flex flex-wrap gap-2">
-          {genres.map((g) => (
-            <Link
-              key={g.slug}
-              href={`/beats/${g.slug}`}
-              className="rounded-full border border-zinc-700 bg-zinc-900/50 px-4 py-2 text-sm text-zinc-300 transition hover:border-zinc-500 hover:text-zinc-100"
-            >
-              {g.display_name} beats
+      <section className="learning-path" aria-label="Learning path">
+        {steps.map(([n, title, copy, href]) => (
+          <Link href={href} key={n}>
+            <span className="step-number">{n}</span>
+            <h2>
+              {title}
+              <span>↗</span>
+            </h2>
+            <p>{copy}</p>
+          </Link>
+        ))}
+      </section>
+      <section id="lenses" className="lenses-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Choose a lens, not a formula</p>
+            <h2>Follow the human pressure.</h2>
+          </div>
+          <p>
+            These lenses overlap. Let the evidence choose the shape; never force
+            an affair, a motive or a solved mystery.
+          </p>
+        </div>
+        <div className="lens-grid">
+          {getGenres().map((g, i) => (
+            <Link href={"/genres/" + g.slug} key={g.slug} className="lens-card">
+              <span className="eyebrow">FIELD NOTES / 0{i + 1}</span>
+              <h3>{g.display_name}</h3>
+              <p>{g.short_definition}</p>
+              <span className="lens-link">
+                Study the lens <span>→</span>
+              </span>
             </Link>
           ))}
         </div>
       </section>
-
-      <section className="mt-14 grid gap-3 sm:grid-cols-2">
-        <Link
-          href="/train"
-          className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-5 transition hover:border-zinc-600"
-        >
-          <h2 className="text-base font-semibold text-zinc-100">Train</h2>
-          <p className="mt-2 text-sm text-zinc-400">
-            Success criteria, FAIL rules, per-genre contracts.
+      <section className="feature-story">
+        <div>
+          <p className="eyebrow">The annotated case · fictional exercise</p>
+          <h2>The letter that outlived the verdict.</h2>
+          <p>
+            A marriage. A decision to leave. A poisoning allegation. A
+            conviction overturned. Follow one complete draft from its practice
+            evidence packet to its final unresolved question.
           </p>
-        </Link>
-        <Link
-          href="/agents"
-          className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-5 transition hover:border-zinc-600"
-        >
-          <h2 className="text-base font-semibold text-zinc-100">Agents</h2>
-          <p className="mt-2 text-sm text-zinc-400">
-            How to load /llms.txt, /schema.md, /data/*.
+          <Link className="quiet-link" href="/examples/love">
+            Open the worked story →
+          </Link>
+        </div>
+        <div className="feature-quote">
+          <span>THE REPAIR</span>
+          <del>“Justice finally prevailed.”</del>
+          <p>
+            What did the ruling actually change—and what could it never give
+            back?
           </p>
-        </Link>
-        <Link
-          href="/checklists/universal"
-          className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-5 transition hover:border-zinc-600"
-        >
-          <h2 className="text-base font-semibold text-zinc-100">Checklists</h2>
-          <p className="mt-2 text-sm text-zinc-400">
-            Universal + genre QA including Strong Ending gate.
-          </p>
-        </Link>
-        <Link
-          href="/examples/love"
-          className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-5 transition hover:border-zinc-600"
-        >
-          <h2 className="text-base font-semibold text-zinc-100">Examples</h2>
-          <p className="mt-2 text-sm text-zinc-400">
-            Annotated cold opens — fragments, not full scripts.
-          </p>
-        </Link>
+          <small>Specific consequence beats an abstract moral.</small>
+        </div>
       </section>
-
-      <div className="mt-12">
-        <Disclaimer />
-      </div>
+      <section className="standard-strip">
+        <div>
+          <p className="eyebrow">The editorial standard</p>
+          <h2>Brief. Never thin.</h2>
+        </div>
+        <p>
+          <strong>570–610 words</strong>
+          <span>Calibration target, not padding.</span>
+        </p>
+        <p>
+          <strong>Over 3:00 → about 4:30</strong>
+          <span>Time the read. Hard ceiling: 5:00.</span>
+        </p>
+        <Link href="/checklists/universal">See the gates →</Link>
+      </section>
     </div>
   );
 }

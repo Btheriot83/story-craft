@@ -67,7 +67,7 @@ export default async function GenrePage({ params }: Props) {
           href={`/examples/${slug === "crime-of-passion" ? "passion" : slug}`}
           className="rounded-full border border-zinc-700 px-3 py-1 text-zinc-300 hover:border-zinc-500"
         >
-          Cold-open example
+          Worked example
         </Link>
       </div>
 

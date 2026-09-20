@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE.name} — ≤5-min fiction craft`,
+    default: `${SITE.name} — The factual story desk`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,

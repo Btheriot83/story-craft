@@ -1,292 +1,113 @@
 {
-  "id": "beats-love-v1",
+  "id": "beats-love-v2",
   "genre": "love",
-  "version": "1",
+  "version": "2",
   "spoken_minutes_target": {
-    "min": 2,
-    "max": 5
+    "min": 3,
+    "max": 4.5
   },
   "word_count_guide": {
-    "min": 400,
-    "max": 750,
-    "ideal": 650
+    "min": 570,
+    "max": 610,
+    "ideal": 590
   },
-  "ending_strength_required": "high",
+  "ending_strength_required": "3",
   "ending_fail_modes": [
-    "fade_out",
-    "ambiguous_uncommitted",
-    "misunderstanding_only_fix",
-    "unearned_declaration",
-    "epilogue_without_choice"
+    "invented_resolution",
+    "abstract_moral",
+    "unsupported_accusation",
+    "outdated_case_status"
   ],
   "beats": [
     {
-      "id": "love.hook",
+      "id": "love-1",
       "order": 1,
-      "name": "Cold open / hook",
+      "name": "The human question",
       "act_phase": "beginning",
-      "purpose": "Airdrop into a charged moment that plants a relationship question and a sensory/token detail for the ending echo.",
-      "duration_hint_sec": [
-        0,
-        20
-      ],
+      "purpose": "Open on a supported action or contradiction involving a named person. Establish a question the record can sustain.",
       "must": [
-        "specific present-tense moment",
-        "implicit question about the two people",
-        "plant echoable detail"
+        "Which documented relationship changes the stakes?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "biographical warm open",
-        "perfect harmony with no friction",
-        "multi-scene prologue"
-      ],
-      "reveal_role": "plant",
-      "citations": [
-        {
-          "title": "Ann Handley — Cold Open",
-          "url": "https://annhandley.com/cold-open-2/",
-          "note": "Airdrop + questions"
-        },
-        {
-          "title": "Poe single effect",
-          "url": "https://www.eapoe.org/works/criticsm/gm442hn1.htm",
-          "note": "Unity of impression"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "love.stake",
+      "id": "love-2",
       "order": 2,
-      "name": "Stake & care hook",
+      "name": "The relationship before the rupture",
       "act_phase": "beginning",
-      "purpose": "Make the listener care within ~60s: want + cost if intimacy fails; genre promise of HEA/HFN-capable tone.",
-      "duration_hint_sec": [
-        15,
-        45
-      ],
+      "purpose": "Orient the listener in time and explain the relationship through documented choices.",
       "must": [
-        "clear want for at least one lead",
-        "cost of failure named or shown",
-        "friction or obstacle seeded"
+        "Which documented relationship changes the stakes?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "stake-free banter only",
-        "tragedy tone if promising romance HEA without labeling"
-      ],
-      "reveal_role": "plant",
-      "citations": [
-        {
-          "title": "Ira Glass storytelling",
-          "url": "https://www.thisamericanlife.org/extras/ira-glass-on-storytelling",
-          "note": "Anecdote raises question; meaning matters"
-        },
-        {
-          "title": "McKee desire/conflict",
-          "url": "https://literarysofa.com/2014/02/06/a-novel-view-of-robert-mckees-story-substance-structure-style-and-the-principles-of-screenwriting/",
-          "note": "Want opposed"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "love.adhesion",
+      "id": "love-3",
       "order": 3,
-      "name": "Adhesion / forced proximity",
+      "name": "The consequential change",
       "act_phase": "middle",
-      "purpose": "External reason they must stay in contact long enough for intimacy and conflict to escalate.",
-      "duration_hint_sec": [
-        45,
-        90
-      ],
+      "purpose": "Show what changed and why the next selected moment follows. Do not infer motive from sequence alone.",
       "must": [
-        "shared problem or constraint",
-        "banter or competence contrast",
-        "attraction spark under pressure"
+        "Which documented relationship changes the stakes?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "optional hangout with no glue",
-        "third-wheel subplot"
-      ],
-      "reveal_role": "none",
-      "citations": [
-        {
-          "title": "Jami Gold short beats",
-          "url": "https://jamigold.com/2018/07/how-can-we-use-beat-sheets-with-short-stories/",
-          "note": "Early conflict drag-in"
-        },
-        {
-          "title": "Instalove compression",
-          "url": "https://medium.com/@ash.brousseau94/romance-beats-for-instalove-how-to-write-short-reads-1e8a3884acfe",
-          "note": "Meet then prove right-but-not-ready"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "love.midpoint",
+      "id": "love-4",
       "order": 4,
-      "name": "Midpoint intimacy turn",
+      "name": "The evidence and its limits",
       "act_phase": "middle",
-      "purpose": "Kiss, confession, or alliance that raises the cost of walking away; meaning of the relationship flips.",
-      "duration_hint_sec": [
-        90,
-        150
-      ],
+      "purpose": "Introduce the material discovery or claim, attribute it, and include the competing account that changes understanding.",
       "must": [
-        "status change between leads",
-        "vulnerability exchange",
-        "stakes increase because of closeness"
+        "Which documented relationship changes the stakes?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "static montage of dates",
-        "intimacy with no cost"
-      ],
-      "reveal_role": "plant",
-      "citations": [
-        {
-          "title": "Yorke five-act / midpoint",
-          "url": "https://www.johnyorkestory.com/five-act-structure/",
-          "note": "Midpoint revelation"
-        },
-        {
-          "title": "Romance midpoint commit",
-          "url": "https://writershelpingwriters.net/2017/09/writing-to-the-beat-translating-story-beats-to-any-genre/",
-          "note": "Commit raises stakes"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "love.black_moment",
+      "id": "love-5",
       "order": 5,
-      "name": "Black moment / rupture",
-      "act_phase": "middle",
-      "purpose": "Separation rooted in the wound/lie — not a fixable misdirected text. Hope crashes near ~75%.",
-      "duration_hint_sec": [
-        150,
-        210
-      ],
+      "name": "The supported turn",
+      "act_phase": "ending",
+      "purpose": "Explain the verdict, reversal, revelation or last verified development in plain language.",
       "must": [
-        "rupture caused by character wound",
-        "real loss felt",
-        "listener fears they won't recover"
+        "Which documented relationship changes the stakes?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "third-party misunderstanding only",
-        "breakup that a 10-second talk would fix",
-        "new random obstacle unrelated to setup"
-      ],
-      "reveal_role": "none",
-      "citations": [
-        {
-          "title": "Dark moment romance craft",
-          "url": "https://plotprose.com/the-dark-moment-romance/",
-          "note": "Earned low from wounds"
-        },
-        {
-          "title": "Instalove tear-apart",
-          "url": "https://medium.com/@ash.brousseau94/romance-beats-for-instalove-how-to-write-short-reads-1e8a3884acfe",
-          "note": "Internal conflict breakup"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     },
     {
-      "id": "love.choice",
+      "id": "love-6",
       "order": 6,
-      "name": "Costly choice / grand gesture",
+      "name": "The human consequence",
       "act_phase": "ending",
-      "purpose": "On-page change: a lead acts against their wound in a way specific to the other's need.",
-      "duration_hint_sec": [
-        210,
-        255
-      ],
+      "purpose": "Return to a named principal with a verified consequence or precisely bounded unanswered question.",
       "must": [
-        "behavioral proof of change",
-        "gesture specific to established wound",
-        "risk or sacrifice visible"
+        "Which documented relationship changes the stakes?",
+        "Attach claim IDs; explicitly mark time shifts."
       ],
       "avoid": [
-        "generic airport run with no story specificity",
-        "apology without change",
-        "off-page decision"
-      ],
-      "reveal_role": "payoff",
-      "citations": [
-        {
-          "title": "HEA earned craft",
-          "url": "https://www.writingmastery.com/blog/hea-vs-hfn-understanding-happy-endings-in-romance-fiction",
-          "note": "Work for happiness; show it"
-        },
-        {
-          "title": "Writers in the Storm earned ending",
-          "url": "https://writersinthestormblog.com/2023/10/reward-your-readers-with-a-battle-that-earns-the-ending/",
-          "note": "Crisis climax short resolution"
-        }
-      ],
-      "ending_strength": "required_high"
-    },
-    {
-      "id": "love.hea_hfn",
-      "order": 7,
-      "name": "HEA/HFN close + resonant echo",
-      "act_phase": "ending",
-      "purpose": "Unmistakable togetherness (HEA or HFN); echo cold-open image/line with new meaning; hard stop on punch not fade.",
-      "duration_hint_sec": [
-        255,
-        300
-      ],
-      "must": [
-        "clear commitment or hopeful-together next step",
-        "echo opening detail with transformed meaning",
-        "decisive last line/image",
-        "genre promise kept"
-      ],
-      "avoid": [
-        "ambiguous maybe",
-        "fade-out kiss with wound unresolved",
-        "long epilogue",
-        "tragedy unmarked as romance-fail"
-      ],
-      "reveal_role": "payoff",
-      "ending_strength": "required_high",
-      "citations": [
-        {
-          "title": "Hannah Lee Kidder endings",
-          "url": "https://hannahleekidder.com/2023/07/05/how-to-end-a-short-story-strategies-examples/",
-          "note": "Connect end to beginning"
-        },
-        {
-          "title": "Writers.com surprising yet inevitable",
-          "url": "https://writers.com/feature/better-endings-surprising-yet-inevitable-and-astonishing",
-          "note": "Change carries meaning"
-        },
-        {
-          "title": "HEA/HFN contract",
-          "url": "https://kristinastanley.com/2026/03/16/romance-keeping-the-promise/",
-          "note": "Promise fulfillment"
-        }
+        "Invented private thoughts or dialogue",
+        "Procedure that does not change understanding"
       ]
     }
-  ],
-  "timeline_patterns": [
-    "linear_single_span",
-    "in_medias_res",
-    "aftermath_then_flashback"
-  ],
-  "character_depth_rules": [
-    "One wound/lie per lead (or shared), shown via choice not essay",
-    "Max 2 leads + 1 catalyst named",
-    "Attraction and friction both on-page before midpoint",
-    "Change must be behavioral before HEA/HFN lands"
-  ],
-  "opening_hook_patterns": [
-    "mid_argument_or_almost_kiss",
-    "forced_proximity_crisis",
-    "witnessing_revealing_act",
-    "text_vs_behavior_contradiction"
-  ],
-  "ending_patterns": [
-    "mirrored_cold_open",
-    "wound_specific_gesture",
-    "spoken_truth_after_silence",
-    "clock_beaten_together",
-    "hfn_doorway_clear_commitment"
   ]
 }

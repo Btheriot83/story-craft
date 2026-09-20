@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090b;
-  --foreground: #fafafa;
+  --background: #111213;
+  --foreground: #eee9df;
 }
 
 @theme inline {
@@ -76,3 +76,107 @@ body {
 .prose-craft input[type="checkbox"] {
   @apply mr-2 accent-rose-400;
 }
+
+html { scroll-behavior: smooth; }
+body { background: #111213 !important; }
+a, button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid #dab79c; outline-offset: 5px; }
+.desk-header { border-bottom: 1px solid #343331; background: #111213; }
+.desk-header-inner { max-width: 1200px; margin: auto; padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; gap: 28px; }
+.wordmark { font-family: Georgia, serif; font-size: 27px; line-height: 1; letter-spacing: -.8px; color: #eee9df; }
+.wordmark span { display: block; margin-top: 10px; font: 9px var(--font-geist-mono), monospace; letter-spacing: 1.8px; color: #a9a49b; }
+.desk-header nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; color: #cbc5ba; }
+.desk-header nav a { padding: 8px 0; }
+.desk-header nav a:hover, .quiet-link:hover { color: #f5c3a2; }
+.desk-home { max-width: 1200px; margin: auto; padding: 0 32px; }
+.hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; padding: 80px 0 66px; align-items: center; }
+.eyebrow { font: 10px var(--font-geist-mono), monospace; line-height: 1.8; letter-spacing: 1.8px; text-transform: uppercase; color: #cbaa92; }
+.hero h1 { font: 400 clamp(44px, 5.5vw, 74px)/1.03 Georgia, serif; letter-spacing: -2.5px; color: #eee9df; margin-top: 22px; }
+.hero h1 em, .editorial-title em { color: #cbaa92; font-weight: normal; }
+.hero-copy { max-width: 510px; color: #b4afa7; font-size: 16px; line-height: 1.8; margin-top: 25px; }
+.hero-actions { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; margin-top: 32px; }
+.primary-link { display: inline-flex; align-items: center; gap: 25px; justify-content: space-between; padding: 14px 19px; color: #201a15; background: #dbc0a8; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid transparent; }
+.primary-link:hover { background: #efcfb6; }
+.quiet-link { font-size: 13px; color: #dbbea7; }
+.hero-note { margin-top: 25px; color: #918c84; font-size: 11px; line-height: 1.8; }
+.case-card { min-height: 352px; border: 1px solid #595046; background: #1c1b19; padding: 28px; position: relative; }
+.case-card:after { content: ""; position: absolute; inset: 8px; border: 1px solid #35322d; pointer-events: none; }
+.case-line { width: 36px; height: 1px; background: #cbaa92; margin: 26px 0; }
+.case-question { font: 28px/1.5 Georgia, serif; color: #eee4d8; letter-spacing: -.5px; }
+.case-question em { color: #cbaa92; }
+.case-bottom { margin-top: 33px; border-top: 1px solid #484038; padding-top: 19px; }
+.case-bottom span { font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: #b9a796; }
+.case-bottom p { margin-top: 8px; font-size: 12px; line-height: 1.8; color: #d2c5b9; }
+.learning-path { display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid #4c453e; border-bottom: 1px solid #4c453e; }
+.learning-path a { padding: 25px 24px; border-right: 1px solid #393733; }
+.learning-path a:first-child { padding-left: 0; }
+.learning-path a:last-child { border: 0; }
+.step-number { font: 11px var(--font-geist-mono), monospace; color: #cbaa92; }
+.learning-path h2 { margin-top: 13px; font: 27px Georgia,serif; display: flex; justify-content: space-between; }
+.learning-path h2 span { font: 14px var(--font-geist-sans),sans-serif; color: #cbaa92; }
+.learning-path p { margin-top: 10px; font-size: 12px; line-height: 1.8; color: #aaa69e; }
+.learning-path a:hover { background: #1b1b1b; }
+.lenses-section { padding: 70px 0; scroll-margin-top: 25px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
+.section-heading h2, .feature-story h2, .standard-strip h2 { font: 36px/1.15 Georgia,serif; letter-spacing: -.8px; margin-top: 12px; }
+.section-heading > p { max-width: 320px; font-size: 13px; color: #aaa69e; line-height: 1.8; }
+.lens-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 34px; }
+.lens-card { padding: 25px 0 0; border-top: 1px solid #756151; display: flex; flex-direction: column; }
+.lens-card h3 { font: 27px/1.15 Georgia,serif; margin-top: 20px; max-width: 250px; }
+.lens-card p { margin-top: 16px; font-size: 13px; line-height: 1.8; color: #aaa69e; flex: 1; }
+.lens-link { margin-top: 25px; padding-top: 15px; border-top: 1px solid #393733; font-size: 11px; color: #cbaa92; display: flex; justify-content: space-between; }
+.lens-card:hover h3 { color: #dbbea7; }
+.feature-story { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; padding: 42px; background: #e5ddcf; color: #252320; }
+.feature-story .eyebrow { color: #79553f; }
+.feature-story h2 { font-size: 42px; }
+.feature-story > div > p:not(.eyebrow) { font-size: 14px; line-height: 1.8; margin: 20px 0; color: #575047; }
+.feature-story .quiet-link { color: #70462e; }
+.feature-quote { border-left: 1px solid #b9aa97; padding-left: 35px; align-self: center; }
+.feature-quote > span { font: 9px var(--font-geist-mono),monospace; letter-spacing: 1.5px; color: #79553f; }
+.feature-quote del { display: block; margin-top: 25px; color: #7f7366; font: 20px Georgia,serif; }
+.feature-story .feature-quote p { font: 26px/1.35 Georgia,serif; color: #352e27; }
+.feature-quote small { color: #655b4f; font-size: 11px; }
+.standard-strip { display: flex; justify-content: space-between; align-items: center; gap: 28px; padding: 45px 0 55px; }
+.standard-strip h2 { font-size: 27px; }
+.standard-strip strong { font-size: 13px; font-weight: 500; }
+.standard-strip p span { display: block; margin-top: 8px; font-size: 11px; color: #aaa69e; }
+.standard-strip > a { font-size: 11px; color: #cbaa92; }
+.editorial-title { font: 48px/1.1 Georgia,serif; letter-spacing: -1.5px; margin-top: 20px; color: #eee9df; }
+.desk-input { display: inline-block; background: #1d1e20; border: 1px solid #595651; color: #eee9df; padding: 10px; border-radius: 2px; font-size: 14px; }
+textarea.desk-input { width: 100%; resize: vertical; line-height: 1.8; }
+.grade-result { padding: 25px; border: 1px solid #635246; background: #1c1b19; }
+.prose-craft h1 { font-family: Georgia,serif; font-weight: 400; font-size: 42px; line-height: 1.15; }
+.prose-craft h2 { font-family: Georgia,serif; font-weight: 400; font-size: 27px; }
+.prose-craft p, .prose-craft li { line-height: 1.85; }
+.prose-craft table { display: block; overflow-x: auto; }
+@media(max-width: 800px) {
+ .hero { grid-template-columns: 1fr; gap: 35px; padding: 48px 0; }
+ .case-card { min-height: auto; }
+ .case-question { font-size: 27px; }
+ .learning-path { grid-template-columns: 1fr 1fr; }
+ .learning-path a { padding: 22px 16px; }
+ .learning-path a:first-child { padding-left: 16px; }
+ .learning-path a:nth-child(2) { border-right: 0; }
+ .learning-path a:nth-child(-n+2) { border-bottom: 1px solid #393733; }
+ .section-heading { display: block; }
+ .section-heading > p { margin-top: 18px; max-width: none; }
+ .lens-grid { grid-template-columns: 1fr; gap: 30px; }
+ .lens-card h3 { max-width: none; }
+ .feature-story { grid-template-columns: 1fr; gap: 35px; padding: 28px; }
+ .standard-strip { display: grid; grid-template-columns: 1fr 1fr; }
+}
+@media(max-width: 540px) {
+ .desk-header-inner { display: block; padding: 22px 20px 12px; }
+ .desk-header nav { margin-top: 20px; gap: 20px; font-size: 12px; }
+ .desk-home { padding: 0 20px; }
+ .hero h1 { font-size: 47px; letter-spacing: -1.8px; }
+ .hero-copy { font-size: 15px; }
+ .hero-actions { gap: 19px; }
+ .section-heading h2, .feature-story h2 { font-size: 33px; }
+ .lenses-section { padding: 48px 0; }
+ .feature-quote { padding-left: 20px; }
+ .standard-strip { gap: 25px 15px; }
+ .editorial-title { font-size: 39px; }
+ .prose-craft h1 { font-size: 34px; }
+}
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

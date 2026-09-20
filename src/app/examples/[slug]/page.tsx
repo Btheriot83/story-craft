@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   if (!isExampleSlug(slug)) return { title: "Example not found" };
   return {
-    title: `${exampleGenreLabel(slug)} cold open`,
-    description: "Annotated cold-open fragment — not a full script",
+    title: exampleGenreLabel(slug),
+    description: "Fictional training exercises in factual-story structure and attribution",
   };
 }
 
@@ -44,11 +44,10 @@ export default async function ExamplePage({ params }: Props) {
         </Link>
       </div>
 
-      <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 px-4 py-3 text-sm text-zinc-300">
-        <strong className="text-amber-200">Fragment only.</strong> These
-        annotated cold opens illustrate beginning technique. They are{" "}
-        <em>not</em> full ≤5-min scripts — full pieces must still clear the
-        Strong Ending gate.
+      <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 px-4 py-3 text-sm text-amber-50">
+        <strong className="text-amber-200">Fictional training material.</strong> All people,
+        records and events here are invented for instruction. These examples teach
+        structure and attribution; they are not factual case sources.
       </div>
 
       <nav className="mt-6 flex flex-wrap gap-2">
